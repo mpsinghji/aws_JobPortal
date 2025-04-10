@@ -20,8 +20,7 @@ app.use(cookieParser());
 const allowedOrigins = [
     process.env.WEB_URL,
     process.env.FRONTEND_URL,
-    'http://localhost:6386',
-    'http://127.0.0.1:6386'
+    process.env.BACKEND_URL
 ];
 
 app.use(cors({
